@@ -1,0 +1,59 @@
+@Kopernicus:FOR[AnUltimateSolarSystem2]
+{
+	Body
+	{
+		name = HotBall
+		Template
+		{
+			name = Gilly
+			removeAllPQSMods = true
+		}
+		Properties
+		{
+			radius = 6000
+			geeASL = 1
+			sphereOfInfluence = 12000
+			rotationPeriod = 185
+		}
+		Orbit
+		{
+			semiMajorAxis = 6094000000
+			inclination = 0
+			eccentricity = 0
+			meanAnomalyAtEpoch = 0
+			argumentOfPeriapsis = 0
+			longitudeOfAscendingNode = 0
+			referenceBody = Sun
+		}
+		ScaledVersion
+		{
+			EmissiveOverlay
+			{
+				emissiveMap = UltimateSolarSystem/KopernicusFiles/000SystemCore/Caretakers/PluginData/HotBall_Glow.png
+				color = RGBA(255,95,0,1)
+				brightness = 1.5
+				transparency = 0.7
+			}
+			Material
+			{
+				texture = UltimateSolarSystem/KopernicusFiles/000SystemCore/Caretakers/PluginData/HotBall_Color.png
+				normals = UltimateSolarSystem/KopernicusFiles/000SystemCore/Caretakers/PluginData/HotBall_Normal.png
+			}
+		}
+		PQS
+		{
+			Mods
+			{
+				VertexHeightMap
+				{
+					deformity = 500
+					map = UltimateSolarSystem/KopernicusFiles/000SystemCore/Caretakers/PluginData/HotBall_Height.png
+				}
+				VertexColorMap
+				{
+					map = UltimateSolarSystem/KopernicusFiles/000SystemCore/Caretakers/PluginData/HotBall_Color.png
+				}
+			}
+		}
+	}
+}

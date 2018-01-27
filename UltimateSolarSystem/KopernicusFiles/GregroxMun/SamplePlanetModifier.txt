@@ -1,0 +1,37 @@
+@Kopernicus:FOR[AnUltimateSolarSystem2]
+{
+	//Make sure to reparent any and all moons!
+	@Body[A1M]
+	{
+		@Orbit
+		{
+			@referenceBody = Namety
+			//was A1, now Namety
+		}
+	}
+	@Body[A1]
+	{
+		@name = Namety
+		@Template
+		{
+			@name = Duna
+		}
+		Properties
+		{
+			radius = 450000
+			geeASL = 0.8
+			description = What's this Duna doing in my system!!!
+		}
+		PQS
+		{
+			Mods
+			{
+				VertexHeightMap
+				{
+					deformity = 1337
+					order = 42
+				}
+			}
+		}
+	}
+}
